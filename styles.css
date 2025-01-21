@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.order {
+    background-color: #61dafb;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+button.order:hover {
+    background-color: #21a1f1;
+}
+
+button.order .success {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+button.order .success svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+    margin: 7px 0 0 4px;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+button.order.clicked .success svg {
+    stroke-dashoffset: 0;
+}
+
+button.order.clicked {
+    background-color: #28a745;
+}
